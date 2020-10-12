@@ -1,0 +1,79 @@
+:root {
+	--shadow: 0px 10px 30px rgba(57,56,61,0.205);
+	--small-shadow: 0 10px 20px rgba(57,56,61,0.3);
+	--gradient: linear-gradient(45deg,yellow,magenta);
+	--color: #0009;
+	--height: 1.5rem;
+}
+@font-face{
+	font-family: Roboto;
+	src: url('Roboto.ttf');
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+	box-sizing: border-box;
+}
+.container-fluid{
+	padding: 3rem;
+	margin:auto;
+	background: whitesmoke;
+}
+.container-fluid .row .col-lg-3{
+	background-size: border-box;
+	position: relative;
+	margin: 2rem 1rem;
+	padding: 2rem;
+	background: white;
+	transition: box-shadow 0.25s ease;
+}
+.container-fluid .row .col-lg-3 a{
+	text-decoration: none;
+	color: black;
+}
+.container-fluid .row .col-lg-3:hover{
+	box-shadow: var(--shadow);
+}
+.container-fluid .row .col-lg-3 .content-title{
+	margin-bottom: 1rem;
+	z-index: 1;
+}
+.container-fluid .row .col-lg-3 .content-text{
+	z-index: 1;
+
+}
+.container-fluid .row .col-lg-3 .color{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	color: whitesmoke;
+	background: #ff00c6;
+	clip-path: circle(20% at 100% 0%);
+	transform: translate(-9%,-19%);
+	margin-left: auto;
+	transition: all 0.25s ease;
+	z-index: 0;
+}
+
+.container-fluid .row .col-lg-3:hover .color{
+	/*position: absolute;*/
+	border-radius: 10px;
+	clip-path: circle(85% at 100% 0%);
+	border-radius: 0;
+	z-index: 0;
+}
+
+.background{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	/*clip-path: circle(20% at 100% 0);*/
+	opacity: 0.5;
+	background: black;
+}

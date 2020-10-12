@@ -1,0 +1,38 @@
+:root {
+	--shadow: 0px 10px 30px rgba(57,56,61,0.205);
+	--small-shadow: 0 10px 20px rgba(57,56,61,0.3);
+	--gradient: linear-gradient(45deg,yellow,magenta);
+	--color: #0009;
+	--height: 1.5rem;
+}
+@font-face{
+	font-family: Roboto;
+	src: url('Roboto.ttf');
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+	box-sizing: border-box;
+}
+.main-area{
+	padding: 2rem 0;
+}
+.main-area .container{
+	background: white;
+	padding: 3rem;
+	box-shadow: var(--shadow);
+}
+.main-area .container .row .col-lg-12 .heading{
+	margin-bottom: 3rem;
+}
+.comment .container{
+
+}
+.comment .container .submitted-comment{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
